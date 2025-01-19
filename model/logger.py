@@ -5,7 +5,7 @@ import errno
 
 logger_date = datetime.now().strftime("%d.log")
 logger_format = "%(asctime)s | %(levelname)s | %(message)s"
-logger_folder = "/home/vietphan/Documents/code/auto-routing/log/"
+logger_folder = os.path.join(os.getcwd(), 'log')
 
 
 def mkdir_p(path):
